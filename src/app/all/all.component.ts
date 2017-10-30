@@ -16,7 +16,7 @@ export class AllComponent {
     new Post("Saying goodbye","It is very hard to say goodbye so just skip goodbyes and leave.")
   ]
 
-  addPostChild(newPost: Post){
+  addPost(newPost: Post){
    this.masterPostList.push(newPost);
  }
   editButtonClicked(postToEdit: Post) {

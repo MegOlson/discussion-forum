@@ -1,8 +1,11 @@
 <h2>All Posts</h2>
 
+<div class="">
+  <app-add (newPostSender)="addPost($event)"></app-add>
+</div>
+
 <ul>
   <li *ngFor="let eachPost of masterPostList">
-    <h4>{{eachPost.headline}}</h4>
-    <button type="button" class="btn" name="button" (click)="editButtonClicked(eachPost)">Edit/Details</button>
+    <h4><a routerLink="">{{eachPost.headline}}</a></h4>
   </li>
 </ul>

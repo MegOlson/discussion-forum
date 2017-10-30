@@ -8,10 +8,10 @@ import { Post } from '../post.model';
 })
 
 export class AddComponent {
-  @Output() clickSender = new EventEmitter();
+  @Output() newPostSender = new EventEmitter();
 
   addPost(headline: string, content: string) {
     let newPost: Post = new Post(headline, content);
-    this.clickSender.emit(newPost);
+    this.newPostSender.emit(newPost);
   }
 }
