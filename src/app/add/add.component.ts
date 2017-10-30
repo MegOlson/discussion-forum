@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Post } from '../post.model';
 
 @Component({
@@ -6,6 +6,12 @@ import { Post } from '../post.model';
   templateUrl: './add.component.html',
   styleUrls: ['./add.component.css']
 })
-export class AddComponent {
 
+export class AddComponent {
+  @Output() clickSender = new EventEmitter();
+
+  addPost(headline: string, content: string) {
+    let newPost: Post = new Post(headline, content);
+    this.clickSender.emit(newPost);
+  }
 }

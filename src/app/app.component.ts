@@ -9,5 +9,4 @@ import { Post } from './post.model';
 export class AppComponent {
   title = 'Discussion Forum';
 
-  
 }

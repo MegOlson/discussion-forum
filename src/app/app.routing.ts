@@ -5,6 +5,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import { AllComponent } from './all/all.component';
 import { AddComponent } from './add/add.component';
+import { EditComponent } from './edit/edit.component';
 
 const appRoutes: Routes = [
   {
@@ -26,6 +27,10 @@ const appRoutes: Routes = [
   {
     path: 'add',
     component: AddComponent
+  },
+  {
+    path: 'edit',
+    component: EditComponent
   }
 ];
 
