@@ -7,6 +7,7 @@ import { routing } from './app.routing';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import { AllComponent } from './all/all.component';
+import { AddComponent } from './add/add.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AllComponent } from './all/all.component';
     NewComponent,
     WelcomeComponent,
     AboutComponent,
-    AllComponent
+    AllComponent,
+    AddComponent
   ],
   imports: [
     BrowserModule,

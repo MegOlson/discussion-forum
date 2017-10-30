@@ -4,6 +4,7 @@ import { NewComponent } from './new/new.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import { AllComponent } from './all/all.component';
+import { AddComponent } from './add/add.component';
 
 const appRoutes: Routes = [
   {
@@ -21,6 +22,10 @@ const appRoutes: Routes = [
   {
     path: 'all',
     component: AllComponent
+  },
+  {
+    path: 'add',
+    component: AddComponent
   }
 ];
 
