@@ -1,1 +1,8 @@
 <h2>All Posts</h2>
+
+<ol>
+  <li *ngFor="let eachPost of masterPostList">
+    <h4>{{eachPost.headline}}</h4>
+    <button type="button" class="btn" name="button">Edit Post</button>
+  </li>
+</ol>
