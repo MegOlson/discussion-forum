@@ -3,10 +3,6 @@
 <ul>
   <li *ngFor="let eachPost of masterPostList">
     <h4>{{eachPost.headline}}</h4>
-    <button type="button" class="btn" name="button"><a routerLink="edit">Edit</a></button>
+    <button type="button" class="btn" name="button" (click)="editButtonClicked(eachPost)">Edit/Details</button>
   </li>
 </ul>
-
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
