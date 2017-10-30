@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { NewComponent } from './new/new.component';
 import { routing } from './app.routing';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
