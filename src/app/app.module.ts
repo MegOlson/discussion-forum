@@ -6,13 +6,15 @@ import { NewComponent } from './new/new.component';
 import { routing } from './app.routing';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
+import { AllComponent } from './all/all.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewComponent,
     WelcomeComponent,
-    AboutComponent
+    AboutComponent,
+    AllComponent
   ],
   imports: [
     BrowserModule,
